@@ -4,127 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
     <title>你的下一台电脑何必是电脑</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        /* top content style */
-        .top_con {
-            width: 100%;
-            height: 65px;
-            background-color: #313131;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .top_con .left_con {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .top_con .left_con img {
-            width: 50px;
-            height: 50px;
-            margin-right: 20px;
-        }
-
-        .top_con .left_con div {
-            width: 100px;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        .top_con .left_con div:hover {
-            background-color: #003daf;
-            color: #000;
-        }
-
-        .top_con .right_con {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .top_con .right_con div {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        .top_con .right_con div:nth-child(1) {
-            margin-left: 10px;
-        }
-
-        .top_con .right_con div:nth-child(2) {
-            margin-right: 10px;
-        }
-
-        .top_con .right_con div div {
-            width: 100px;
-            color: #fff;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .top_con .right_con div div:hover {
-            background-color: #003daf;
-            color: #000;
-        }
-
-        /* banner content style */
-        .banner_con_outer {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-        .banner_con_inner {
-            width: 1250px;
-            height: 612px;
-            position: fixed;
-            margin-left: auto;
-            display: flex;
-        }
-
-        .banner_con_inner img {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            z-index: -1;
-        }
-
-        .banner_con_inner div {
-            flex: 1;
-        }
-        .banner_text_con {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            color: rgba(255, 255, 255, 0.5);
-            font-weight: bold;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: -50%;
-            transition: 0.8s;
-        }
-
-        .banner_text_con div:nth-child(1) {
-            display: flex;
-            align-items: end;
-        }
-    </style>
+    <link rel="stylesheet" href="./style/index.css">
 
     <script>
-        window.onload = ()=> {
+        window.onload = () => {
             let bannerText = document.getElementById("banner_text_animate");
             bannerText.style.marginLeft = "0px";
             bannerText.style.color = "rgba(255, 255, 255, 1)";
@@ -169,6 +54,43 @@
             </div>
             <div></div>
             <img src="./img/banner.png" alt="">
+        </div>
+    </div>
+
+    <div class="cutting_edge_technology_con">
+        <div class="title">Cutting-edge technology</div>
+        <div class="items_con">
+            <div class="item">
+                <div class="image_con">
+                    <div>IoT</div>
+                    <img src="./img/IoT.jpg" alt="">
+                </div>
+                <div class="text">
+                    IoT connects devices via the internet for data exchange and automation, enhancing efficiency and
+                    convenience in smart homes, industry, and urban management.
+                </div>
+            </div>
+            <div class="item">
+                <div class="image_con">
+                    <div></div>
+                    <img src="./img/AI.jpg" alt="">
+                </div>
+                <div class="text">
+                    AI mimics human intelligence, automating decisions through machine
+                    learning and data analysis, with applications in autonomous driving, and
+                    customer service.
+                </div>
+            </div>
+            <div class="item">
+                <div class="image_con">
+                    <div>Cloud<br>Development</div>
+                    <img src="./img/CD.png" alt="">
+                </div>
+                <div class="text">
+                    Cloud development leverages cloud computing services to build and manage applications, offering
+                    cost-effectiveness, scalability, and flexibility for modern software needs.
+                </div>
+            </div>
         </div>
     </div>
 </body>
