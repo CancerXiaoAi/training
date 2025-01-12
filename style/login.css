@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(circle, rgb(176, 174, 142), rgb(69, 88, 100));
+    padding-bottom: 400px;
+    position: sticky;
+}
+
+/* top content style */
+.top_con {
+    width: 100%;
+    height: 65px;
+    background-color: #313131;
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_con .left_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_con .left_con img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.top_con .left_con div {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.top_con .left_con div:hover {
+    background-color: #003daf;
+    color: #000;
+    cursor: pointer;
+}
+
+.top_con .right_con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_con .right_con div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.top_con .right_con div:nth-child(1) {
+    margin-left: 10px;
+}
+
+.top_con .right_con div:nth-child(2) {
+    margin-right: 10px;
+}
+
+.top_con .right_con div div {
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_con .right_con div div:hover {
+    background-color: #003daf;
+    color: #000;
+    cursor: pointer;
+}
+
+/* login content style */
+.login_con {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.login_con .form_con {
+    width: 30%;
+    height: 40vh;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.login_con .form_con .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login_con .form_con .main {
+    width: fit-content;
+    margin: 8vh auto 0px auto;
+}
+
+.login_con .form_con .main label {
+    display: inline-block;
+    width: 150px;
+    font-size: 25px;
+}
+
+.login_con .form_con .main input {
+    height: 30px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login_con .form_con .main button {
+    display: block;
+    margin: 5vh auto 0px auto;
+    width: 10vw;
+    height: 5vh;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+}

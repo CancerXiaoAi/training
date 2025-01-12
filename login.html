@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./style/login.css">
+    <script src="./script/login.js"></script>
+</head>
+
+<body>
+    <div class="top_con">
+        <!-- contains website logo and some options -->
+        <div class="left_con">
+            <img src="./img/logo_no_background.png" alt="img" onclick="window.open('./index.html', '_self')">
+            <div>System</div>
+            <div>Hardware</div>
+            <div>Windows</div>
+            <div>MacOS</div>
+            <div>Linux</div>
+            <div>News</div>
+            <div>Support</div>
+            <div>About us</div>
+        </div>
+
+        <!-- some tools like search, login, regist... -->
+        <div class="right_con">
+            <div>
+                <div>chat</div>
+                <div>search</div>
+            </div>
+            <div>
+                <div title="login" onclick="window.open('./login.html', '_self')">login</div>
+                <div title="registor">registor</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login_con">
+        <div class="form_con">
+            <div class="title">Login with your account</div>
+            <div class="main" id="main">
+                <label for="username">User name:</label>
+                <input type="text" name="" id="username">
+                <br>
+                <br>
+                <label for="passwd">Password:</label>
+                <input type="password" id="passwd">
+
+                <button onclick="login()">login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
