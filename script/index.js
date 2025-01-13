@@ -6,7 +6,7 @@ window.onload = () => {
 
     let ele = document.querySelectorAll(".item");
     for (let i = 0; i < ele.length; i++) {
-        let hoverText = "There's nothing"
+        let hoverText = "暂无内容";
         ele[i].addEventListener("mouseenter", () => {
             switch (ele[i].id) {
                 case "web":
