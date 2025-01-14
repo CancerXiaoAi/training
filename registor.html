@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./style/login.css">
+    <script src="./script/login.js"></script>
+</head>
+
+<body>
+    <div class="top_con">
+        <!-- contains website logo and some options -->
+        <div class="left_con">
+            <img src="./img/logo_no_background.png" alt="img" onclick="window.open('./index.html', '_self')">
+            <div>操作系统</div>
+            <div>硬件</div>
+            <div>Windows</div>
+            <div>MacOS</div>
+            <div>Linux</div>
+            <div>新闻</div>
+            <div>支持</div>
+            <div>关于我们</div>
+        </div>
+
+        <!-- some tools like search, login, regist... -->
+        <div class="right_con">
+            <div>
+                <div>讨论</div>
+                <div>搜索</div>
+            </div>
+            <div>
+                <div title="login" onclick="window.open('./login.html', '_self')">登录</div>
+                <div title="registor">注册</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login_con">
+        <div class="form_con">
+            <div class="title">注册你的账号</div>
+            <div class="main" id="main">
+                <label for="username">用户名:</label>
+                <input type="text" name="" id="username">
+                <br>
+                <br>
+                <label for="passwd">密码:</label>
+                <input type="password" id="passwd">
+                <br>
+                <br>
+                <label for="passwd">确认密码:</label>
+                <input type="password" id="deter_passwd">
+
+                <button onclick="reg()">注册</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
