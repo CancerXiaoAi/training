@@ -1,0 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: radial-gradient(circle, rgb(176, 174, 142), rgb(69, 88, 100));
+}

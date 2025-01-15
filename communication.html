@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Communication</title>
+    <link rel="stylesheet" href="./style/navigate.css">
+    <link rel="stylesheet" href="./style/communication.css">
 </head>
+
 <body>
-    
+    <div class="top_con">
+        <!-- contains website logo and some options -->
+        <div class="left_con">
+            <img src="./img/logo_no_background.png" alt="img" onclick="window.open('./index.html', '_self')">
+            <div>人工智能</div>
+            <div>智能物流</div>
+            <div>大数据</div>
+            <div>云开发</div>
+            <div>智能家居</div>
+            <div>关于我们</div>
+        </div>
+
+        <!-- some tools like search, login, regist... -->
+        <div class="right_con">
+            <div>
+                <div onclick="window.open('./communication.html', '_self')">讨论</div>
+                <div>搜索</div>
+            </div>
+            <div>
+                <div title="login" onclick="window.open('./login.html', '_self')">登录</div>
+                <div title="register" onclick="window.open('./register.html', '_self')">注册</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
