@@ -3,11 +3,12 @@ window.onload = () => {
     let bannerText = document.getElementById("banner_text_animate");
     bannerText.style.marginLeft = "0px";
     bannerText.style.color = "rgba(255, 255, 255, 1)";
-
+    let hoverText = "暂无内容"; 
     let ele = document.querySelectorAll(".item");
     for (let i = 0; i < ele.length; i++) {
-        let hoverText = "暂无内容";
+        let original;
         ele[i].addEventListener("mouseenter", () => {
+            original = ele[i].innerText;
             switch (ele[i].id) {
                 case "web":
                     document.getElementById("web").innerText = hoverText;
@@ -38,25 +39,25 @@ window.onload = () => {
         ele[i].addEventListener("mouseleave", () => {
             switch (ele[i].id) {
                 case "web":
-                    document.getElementById("web").innerText = "Website";
+                    document.getElementById("web").innerText = original;
                     break;
                 case "app":
-                    document.getElementById("app").innerText = "Application";
+                    document.getElementById("app").innerText = original;
                     break;
                 case "smart":
-                    document.getElementById("smart").innerText = "Smart home";
+                    document.getElementById("smart").innerText = original;
                     break;
                 case "chat":
-                    document.getElementById("chat").innerText = "Chat";
+                    document.getElementById("chat").innerText = original;
                     break;
                 case "ai":
-                    document.getElementById("ai").innerText = "AI";
+                    document.getElementById("ai").innerText = original;
                     break;
                 case "iot":
-                    document.getElementById("iot").innerText = "IoT";
+                    document.getElementById("iot").innerText = original;
                     break;
                 case "games":
-                    document.getElementById("games").innerText = "Games";
+                    document.getElementById("games").innerText = original;
                     break;
 
                 default:
