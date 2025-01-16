@@ -34,7 +34,7 @@ function reg() {
             localStorage.setItem("name", username.value);
             localStorage.setItem("passwd", passwd.value);
             if (confirm("注册成功")) {
-                window.open("index.html", "_self");
+                window.open("login.html", "_self");
             }
         } else {
             alert("密码不一致");
